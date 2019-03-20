@@ -49,7 +49,7 @@ int main(int argc, char** argv)
             return 2;
         }
 
-        int c;
+        unsigned int c;
         while ((c = fgetwc(f)) > 0) {
             if (!escape_state) {
                 if (c == '\e') {
